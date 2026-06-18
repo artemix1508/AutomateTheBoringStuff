@@ -1,4 +1,6 @@
 import platform
+import threading
+from win11toast import toast
 
 operatingsystem = [platform.system(), platform.release(), platform.version()]
 
@@ -34,5 +36,16 @@ while True:
             print("Invalid operation.")
             continue
         print(f"Result: {result}")
+    elif command == "reminder":
+        try:
+            message = input("Enter the reminder message: ")
+            timetoremind = int(input("Enter the time in seconds for the reminder: "))
+            threading.Timer(timetoremind, lambda: toast("Reminder", message)).start()
+            print(f"Success: Reminder set for {timetoremind} seconds from now!")
+        except ValueError:
+            print("Invalid input. Please enter a valid number for the time.")
+
+
+
     else:
         print(f"Unknown command: {command}. Type 'help' to see the list of available commands.")
