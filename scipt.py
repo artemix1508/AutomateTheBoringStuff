@@ -1,6 +1,9 @@
+import platform
+operatingsystem = [platform.system(), platform.release(), platform.version()]
+commandlist = ["help", "exit", "calculator - placeholder for now", "reminder - placeholder for now"]
+print(f"Operating System: {operatingsystem[0]} {operatingsystem[1]} {operatingsystem[2]}")
 print("Hello, Welcome to 'Automate The Boring Stuff' or 'ATBS' for short!")
 print("NOTE: enter help to get the full list of available commands.")
-commandlist = ["help", "exit", "calculator", "reminder"]
 #To do: add more FUNCTIONING commands cuz i only have 2 working commands right now, and the rest are just placeholders for now.
 while True:
     command = input("Enter a command: ")
