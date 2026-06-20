@@ -7,7 +7,6 @@ from win11toast import toast
 # ▐▛▀▜▌ █  ▐▛▀▚▖ ▝▀▚▖
 # ▐▌ ▐▌ █  ▐▙▄▞▘▗▄▄▞
 
-
 operatingsystem = [platform.system(), platform.release(), platform.version()]
 
 commandlist = ["help", "exit", "calculator", "reminder",]
