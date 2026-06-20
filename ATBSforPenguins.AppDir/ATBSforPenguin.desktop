@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ATBS For Penguins
+Exec=ATBSforPenguins
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;
